@@ -1,0 +1,87 @@
+@import "./fonts";
+:root{
+    --h1-font-size: 60px;
+    --h2-font-size: 40px;
+    --h3-font-size: 28px;
+    --h4-font-size: 24px;
+    --heading-mb: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1100px;
+    padding: 0 20px;
+}
+h1{
+    font-family: 'Dosis';
+    font-weight: bold;
+    font-size: var(--h1-font-size);
+}
+h2{
+    font-family: 'Dosis';
+    font-weight: normal;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    padding: 30px 0 10px;
+    text-decoration: underline;
+}
+h3{
+    font-family: 'Dosis';
+    font-weight: normal;
+    font-size: 28px;
+
+}
+
+p{
+    font-family: 'Titillium';
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+section.color{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    div{
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color:#333333;
+        &:nth-of-type(1){ background-color: #333333; color: #f6f6f6;}
+        &:nth-of-type(2){ background-color: #FFAEBC; }
+        &:nth-of-type(3){ background-color: #A0E7E5; }
+        &:nth-of-type(4){ background-color: #B4F8C8; }
+        &:nth-of-type(5){ background-color: #FBE7C6; }
+        &:nth-of-type(6){ background-color: #f6f6f6; }
+        p{
+            text-align: center;
+        }
+    }
+}
+section.fonts{
+    display: grid;
+    grid-template-columns: auto auto;
+    &>h1, &>h2, &>h3, &>p{
+        display: flex;
+        align-items: center;
+        padding: 0;
+    text-decoration: none;
+
+    }
+    div{
+        display: grid;
+        min-height: 100px;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        p{
+            padding-left: 20px;
+            margin: 0;
+        }
+    }
+}
